@@ -1,2 +1,10 @@
-# Laptop-Price-Prediction
-The Laptop Price Prediction project is a machine learning-based solution designed to estimate the market price of a laptop based on its specifications. In a time where a vast range of laptop models with varying configurations are available.
+💻 Laptop Price Predictor
+This project is a machine learning-based web application that predicts the price of a laptop based on user-input specifications. It uses a trained regression model and provides a simple interface through Streamlit, allowing users to interact with the model in real-time. The main objective is to help users get an estimated price of a laptop by selecting features such as brand, type, RAM, CPU, GPU, screen size, and storage options.
+
+The application was built using Python, with key libraries including scikit-learn for the machine learning model, pandas and numpy for data handling, and Streamlit for creating the user interface. The model itself is a Gradient Boosting Regressor trained on a dataset of laptops, which includes various specifications and their corresponding prices. The dataset was preprocessed to extract relevant features and encode categorical variables before training the model.
+
+Once the model was trained and tested, it was serialized using pickle and saved as pipe.pkl. A cleaned and preprocessed version of the original dataset was also saved as dataset.pkl for use in the Streamlit app. When the app runs, it loads both the model and the dataset, and allows the user to input various laptop specifications. Based on these inputs, the model outputs a predicted price, giving users an idea of how much a laptop with those specs might cost.
+
+To run the application, users need to clone the repository, install the required dependencies listed in requirements.txt, and then start the app using the command streamlit run app.py. This opens the Streamlit interface in the browser, where users can interactively select features and get predictions. It is recommended to use Python 3.10 or below for compatibility with the version of scikit-learn used to train the model.
+
+This project demonstrates how machine learning can be applied to real-world pricing problems and how tools like Streamlit make it easy to deploy ML models as interactive applications.
